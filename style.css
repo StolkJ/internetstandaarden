@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f1efe6; 
+    color: #4b3621; 
+    line-height: 1.6;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #b39c4d; 
+    color: #fff;
+    padding: 1.5rem 2rem; 
+    box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.1);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    max-width: 10rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.25rem;
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.5rem 0.9375rem;
+    border-radius: 1.5625rem;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #4b3621; 
+    color: #fff;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 80rem;
+    margin: 2.5rem 0;
+}
+
+.hero, .about, .episodes, .teaser {
+    padding: 3.125rem 1.25rem;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 0.9375rem;
+    box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.1);
+    margin-bottom: 2.5rem;
+    width: 100%;
+    max-width: 50rem;
+}
+
+.hero h2, .about h2, .episodes h2, .teaser h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.875rem;
+    color: #4b3621;
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+}
+
+.hero p, .about p {
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+    max-width: 45rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero img {
+    width: 100%;
+    max-width: 40rem;
+    border-radius: 0.625rem;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    margin-bottom: 2rem;
+}
+
+.hero img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.2);
+}
+
+.teaser {
+    text-align: center;
+}
+
+.teaser video {
+    width: 100%;
+    max-width: 40rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.1);
+}
+
+.hosts {
+    display: flex;
+    justify-content: center;
+    gap: 1.875rem;
+    flex-wrap: wrap;
+}
+
+.host {
+    background-color: #f9f3e3;
+    padding: 1.25rem;
+    border-radius: 0.9375rem;
+    max-width: 13.75rem;
+    text-align: center;
+    box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.host:hover {
+    transform: translateY(-0.625rem);
+    box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.2);
+}
+
+.host img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 0.9375rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.host h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.625rem;
+    color: #4b3621;
+}
+
+.host p {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.episodes ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.episodes li {
+    font-size: 1.2rem;
+    padding: 1.25rem;
+    margin: 0.9375rem 0;
+    background-color: white;
+    border-radius: 0.625rem;
+    width: 100%;
+    max-width: 37.5rem;
+    text-align: center;
+    box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.episodes li:hover {
+    background-color: #b39c4d;
+    color: #fff;
+    box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #4b3621;
+    color: #fff;
+    text-align: center;
+    padding: 1.25rem 0;
+    margin-top: 2.5rem;
+    box-shadow: 0 -0.125rem 0.625rem rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
